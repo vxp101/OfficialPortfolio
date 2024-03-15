@@ -13,50 +13,6 @@ body {
     
 }
 
-#Card-section {
-    display: flex;
-    flex-direction: column;
-
-    text-align: center;
-    background-color: antiquewhite;
-    
-}
-#Card-container {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100cap;
-    background-color: antiquewhite;
-    justify-content: space-evenly;
-}
-.Card {
-    
-    flex-direction: column-reverse;
-    /* background-image: url("./assets/card_background.jpg"); */
-    background-color: wheat;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    box-shadow: 0px 1px 3cap 3px rgba(84, 79, 79, 0.5);
-    height: 400px;
-    width: 400px;
-    transition: 1s;
-}
-
-.Card img {
-    height: 100%;
-    width: 100px;
-    object-fit: cover;
-}
-
-.Card:hover{
-    box-shadow: 0px 1px 4cap 3px rgba(84, 79, 79, 0.5);
-    /* animation-name: Grow;
-    animation-duration: 1s; */
-    height: 504px;
-    width: 450px;
-    transition-delay: 80ms;
-    
-}
-
 #Header header {
     margin-left: 30px;
 }
@@ -96,6 +52,70 @@ body {
     background-color: aliceblue;
     
 }
+
+#AboutMe-section {
+    
+    margin-left: 20cap;
+}
+
+
+
+#BeforeCardContainer {
+    
+    height: 200px;
+    background: linear-gradient(white, rgba(84, 79, 79, 0));
+
+}
+#Card-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:rgba(84, 79, 79, 0.5);
+    color:black;
+    
+}
+#Card-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-evenly;
+
+}
+.Card {
+    
+    flex-direction: column-reverse;
+    /* background-image: url("./assets/card_background.jpg"); */
+    background-color: #3f3b3b;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 0px 1px 3cap 3px rgba(84, 79, 79, 0.5);
+    height: 400px;
+    width: 400px;
+    transition: 1s;
+}
+
+.Card img {
+    height: 100%;
+    width: 100px;
+    object-fit: cover;
+}
+
+.Card:hover{
+    box-shadow: 0px 1px 4cap 3px rgba(84, 79, 79, 0.5);
+    /* animation-name: Grow;
+    animation-duration: 1s; */
+    height: 504px;
+    width: 450px;
+    transition-delay: 80ms;
+    
+}
+
+#AfterCardContainer {
+    height: 200px;
+    background: linear-gradient(rgba(84, 79, 79, 0), white);
+}
+
 @media only screen and (max-width: 1274px){
     
     .Card {
