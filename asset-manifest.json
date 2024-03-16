@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/OfficialPortfolio/static/css/main.2261a4df.css",
-    "main.js": "/OfficialPortfolio/static/js/main.96ca42c5.js",
+    "main.css": "/OfficialPortfolio/static/css/main.f6e534a7.css",
+    "main.js": "/OfficialPortfolio/static/js/main.fbf4e59a.js",
     "static/js/453.1407b060.chunk.js": "/OfficialPortfolio/static/js/453.1407b060.chunk.js",
     "static/media/BookmarkApp.png": "/OfficialPortfolio/static/media/BookmarkApp.066ed75db346dba586cf.png",
+    "static/media/dog_photo1.png": "/OfficialPortfolio/static/media/dog_photo1.f14c65177f3d8ef3f032.png",
     "static/media/QuizGame.png": "/OfficialPortfolio/static/media/QuizGame.d1da3e31407653f2b7f6.png",
     "static/media/HeaderImage1.jpg": "/OfficialPortfolio/static/media/HeaderImage1.a3179a1692d052c1e947.jpg",
     "static/media/card_background.jpg": "/OfficialPortfolio/static/media/card_background.c876ac9638db40b6c551.jpg",
@@ -11,12 +12,12 @@
     "static/media/linkedin-logo.webp": "/OfficialPortfolio/static/media/linkedin-logo.fbf9ee863e4a3f60ab0a.webp",
     "static/media/logo.svg": "/OfficialPortfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/OfficialPortfolio/index.html",
-    "main.2261a4df.css.map": "/OfficialPortfolio/static/css/main.2261a4df.css.map",
-    "main.96ca42c5.js.map": "/OfficialPortfolio/static/js/main.96ca42c5.js.map",
+    "main.f6e534a7.css.map": "/OfficialPortfolio/static/css/main.f6e534a7.css.map",
+    "main.fbf4e59a.js.map": "/OfficialPortfolio/static/js/main.fbf4e59a.js.map",
     "453.1407b060.chunk.js.map": "/OfficialPortfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2261a4df.css",
-    "static/js/main.96ca42c5.js"
+    "static/css/main.f6e534a7.css",
+    "static/js/main.fbf4e59a.js"
   ]
 }
