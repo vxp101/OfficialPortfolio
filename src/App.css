@@ -7,29 +7,41 @@ body {
 
 }
 
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
 #index{
+
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     
 }
+
 
 #Header header {
     margin-left: 30px;
 }
 
-#Header {
+#Header, #HeaderMobile {
     position: sticky;
     top: 0px;
     display: flex;
     justify-content: space-between;
+    z-index: 3;
     height: 80px;
     width: 100%;
     background-color: #3f3b3b;
-
     color: white;
 }
 
-#Header .Button-header {
+#HeaderMobile {
+    display: none;
+}
+
+.Button-header {
     height: 100%;
     width: 100px;
     font-weight: bold;
@@ -39,7 +51,7 @@ body {
     transition: 1s;
 }
 
-#Header .Button-header:hover{
+.Button-header:hover{
 
     color:lightgrey;
     background-color: grey;
@@ -48,20 +60,65 @@ body {
 
 }
 
-#Header .Button-header:active{
+.Button-header:active{
     background-color: aliceblue;
     
 }
 
-#AboutMe-section {
-    
+#AboutMe-section{
+    display: flex;
+    flex-direction: column;
     margin-left: 20cap;
+    margin-bottom: 10cap;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#logos::before, #logos::after{
+    height: 100%;
+    width:250px;
+    top: 0;
+    position: absolute;
+    content: "";
+    z-index: 2;
+}
+#logos::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #2f2929);
+}
+
+#logos::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #2f2929);
+}
+#logos {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #AFBFCF;
+    border-top: 2px solid #2f2929;
+    border-bottom:2px solid#2f2929;
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
 }
 
 
+#ScrollingLang {
+    display: inline-block;
+    animation: 35s slide infinite linear
+}
+#ScrollingLang img{
+    height: 50px;
+    margin: 0 50px;
+}
 
 #BeforeCardContainer {
-    
     height: 200px;
     background: linear-gradient(white, rgba(84, 79, 79, 0));
 
@@ -116,41 +173,112 @@ body {
     background: linear-gradient(rgba(84, 79, 79, 0), white);
 }
 
-@media only screen and (max-width: 1274px){
+#Contact {
     
+    align-self: center;
+    height: 500px;
+    
+}
+#ContactCard {
+    
+    height: 300px;
+    width: 600px;
+    box-shadow: 0px 0px 20px 0px rgba(84, 79, 79, 0.4);
+    /* box-shadow: 0px 1px 4cap 3px rgba(84, 79, 79, 0.5); */
+    content: "";
+}
+
+#ContactCard p {
+    font-size: 30px;
+    padding: 20px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#react-logo {
+    animation-name: Spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+#react-logo.Parent {
+    margin-right: 100px;
+}
+@media only screen and (max-width: 1250px){
+    #AboutMe-section {
+        
+        margin-left:20%;
+    }
+   
+    #AboutMe-container {
+        flex-direction: column;
+    }
+    .Contact-images {
+        
+    }
     .Card {
         margin-top: 20px;
-        width: 80%;
+        width: 400px;
         display: flex;
         flex-direction: column-reverse;
         background-image: none;
         
     }
-
     .Card img{
         width:100%;
         height: 300px;
     }
     
     #Header {
-        flex-direction: row-reverse;
+        /* flex-direction: row-reverse; */
         width: 100%;
     }
-    #Button-header{
+    /* #Button-header{
         display: flex;
         flex-direction: column;
         
-    }
+    } */
 }
 
-@keyframes Grow {
+@media only screen and (max-width: 680px) {
+    #AboutMe-section {
+        margin: 0;
+        width: 100%;
+    }
+    #AboutMe-container{
+    
+        flex-direction: row;
+        
+    }
+    #introduction {
+        width: 20%;
+    }
+    #AboutImg {
+        display: none;
+    }
+
+    /* #Header {
+        display: none;
+        
+    }
+    #HeaderMobile {
+        display: flex;
+        width: 100%;
+    } */
+    .Button-header {
+        width: 93px
+    }
+    
+}
+
+@keyframes Spin {
     from {
-        height: 400px;
-        width: 300px;
+        transform: rotate(0deg);
     }
     to {
-        box-shadow: 0px 1px 4cap 3px rgba(84, 79, 79, 0.5);
-        height: 504px;
-        width: 21%;
+        transform: rotate(360deg);
     }
 }

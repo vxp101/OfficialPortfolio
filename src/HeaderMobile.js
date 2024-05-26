@@ -1,22 +1,19 @@
-export default function Header(){
+export default function HeaderMobile(){
     return (
-        <section id="Header">
-            <header>
-                <h2>Brendon Jennett</h2>
-            </header>
+    <section id="HeaderMobile">
             <div id="Button-header">
                 <a href="#AboutMe-section">
                     <button role="link" className="Button-header">Home</button>
                 </a>
-                {/* <a href="#">
+                <a href="#">
                     <button role="link" className="Button-header">About</button>
-                </a> */}
-                <a href="#Card-section">
+                </a>
+                <a href="#Card-selection">
                     <button role="link" className="Button-header">Projects</button>
                 </a>
-                {/* <a href="#">
+                <a href="#">
                     <button role="link" className="Button-header">Contact</button>
-                </a> */}
+                </a>
             </div>
         </section>
     )

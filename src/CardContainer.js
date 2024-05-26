@@ -1,17 +1,16 @@
 import Card from './Card'
 import HeaderImage1 from './assets/HeaderImage1.jpg'
 import QuizGameImage from './assets/QuizGame.png'
-
+import BookmarkApp from './assets/BookmarkApp.png'
 export default function CardContainer(){
    return (
    <section id='Card-section' className='section'>
          <div id='BeforeCardContainer'></div>
          <u><h1>Projects</h1></u>
          <div id="Card-container">
-            <Card cardtext="Hi, my name is Brendon. I enjoy programming and nature. I look to make my projects as tranquil as it would be in nature. If you want to get into contact with me, my contact info is at the bottom." imgsrc={HeaderImage1} alttext=""/>
-            <Card cardtext="Hi, my name is Brendon. I enjoy programming and nature. I look to make my projects as tranquil as it would be in nature. If you want to get into contact with me, my contact info is at the bottom." imgsrc={QuizGameImage} alttext="Quiz Game"/>
+            <Card imgsrc={BookmarkApp} alttext="" link="https://vxp101.github.io/brendon-bookmarks-app/" cardtext="This is the BookmarkApp I made at Thinkful. I made this utilizing RESTful APIs, CSS, HTML and jQuery inside Visual Studio."/>
+            <Card imgsrc={QuizGameImage} alttext="Quiz Game" link="https://vxp101.github.io/QuizzesForWork/" cardtext="This is a quiz game I made in HTML, CSS, and Vanilla Js using Notepad as the IDE. I made this purely as a challenge of if I could make a website with no internet" />
             <Card cardtext="" imgsrc="" alttext="No image" />
-            
         </div>
       <div id='AfterCardContainer'></div>
     </section>
