@@ -1,4 +1,4 @@
-export default function Card(props){
+export default function CardIframe(props){
     return (
         <a href={`${props.link}`} style={{textDecoration:'none'}}>
             <section className="Card" style={{display:"flex", justifyContent:"space-between", margin:"20px",flexDirection:`${props.flexDirection}`}}>
@@ -8,7 +8,7 @@ export default function Card(props){
                     </p>
                 </div>
                 
-                <img src={`${props.imgsrc}`} alt={props.alttext} style={{width:'100%', height:"40%"}}/>
+                <iframe src={`${props.imgsrc}`} alt={props.alttext} style={{width:'100%', height:"40%"}}/>
                 
             </section>
         </a>
