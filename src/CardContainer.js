@@ -14,7 +14,7 @@ export default function CardContainer(){
             <Card imgsrc={BookmarkApp} alttext="" link="https://vxp101.github.io/brendon-bookmarks-app/" cardtext="This is the BookmarkApp I made at Thinkful. I made this utilizing RESTful APIs, CSS, HTML and jQuery inside Visual Studio."/>
             <Card imgsrc={QuizGameImage} alttext="Quiz Game" link="https://vxp101.github.io/QuizzesForWork/" cardtext="This is a quiz game I made in HTML, CSS, and Vanilla Js using Notepad as the IDE. I made this purely as a challenge of if I could make a website with no internet" />
             <Card imgsrc={MyPortfolio} alttext="This Webpage" cardtext="I built this webpage using React and Node.Js. In the future I will be adding PostgreSQL and adding Upvotes and Downvotes."/>
-            <Card imgsrc={SendToEmail} link='https://github.com/vxp101/ContextMenuSendToEmail' alttext="Send To Email" cardtext="I built this using Python, Registry Editor, and Batch. Then I used PyInstaller to create a function app that sends files directly to my email without hassle"/>
+            <Card imgsrc={SendToEmail} link='https://github.com/vxp101/ContextMenuSendToEmail' alttext="Send Files To Email" cardtext="I built this using Python, Registry Editor, Batch and MIME method. Then I used PyInstaller to create a functioning script that sends files directly to my email without hassle"/>
         </div>
       <div id='AfterCardContainer'></div>
     </section>

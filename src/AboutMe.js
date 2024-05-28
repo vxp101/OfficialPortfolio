@@ -15,7 +15,7 @@ export default function AboutMe(props){
                                                 width:'500px',
                                                 textAlign: 'center', 
                                                 marginTop: "5%"}}>
-                        Hi, my name is Brendon, I enjoy the outdoors and like to mix in the joys of life into each of my projects. Thank you for taking the time to look at my portfolio. I can't wait to work with you.
+                        Hi, my name is Brendon, I enjoy the outdoors and like to mix in the joys of life into each of my projects. Thank you for taking the time to look at my portfolio.
                     </p>
                     <div className='Contact-images' style={{display:'flex', 
                                                             justifyContent:'end',
